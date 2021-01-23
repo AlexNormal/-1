@@ -8,11 +8,58 @@ body
 {
     height: 100%;
 }
-header
+#BlockMenu
 {
-    background-color: black;
-    height: 200px;  
-	padding-top: 0; 
+	background-image: url(Images/1.jpg);
+	height: 200px;  
+	padding-top: 0;
+}
+#GorisMenu
+{
+	list-style-type: none;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 150px;
+}
+#GorisMenu li
+{
+	display: inline;
+	padding: 5px 10px;
+}
+#GorisMenu a
+{
+	color: white;
+	background: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 250px;
+	cursor: pointer;
+	line-height: 2;
+	position:relative;
+	font-size: 20;
+}
+#GorisMenu a:after
+{
+	background-color: white;
+	display: block;
+	content: "";
+	height: 2px;
+	width: 0%;
+	left:50%;
+	position:absolute;
+	-webkit-transition: width .3s ease-in-out;
+	-moz--transition: width .3s ease-in-out;
+	transition: width .3s ease-in-out;
+	-webkit-transform:translateX(-50%);
+	-moz-transform:translateX(-50%);
+	transform:translateX(-50%);
+}
+#GorisMenu a:hover:after,
+#GorisMenu a:focus:after 
+{
+    width: 100%;
 }
 #Content
 {
